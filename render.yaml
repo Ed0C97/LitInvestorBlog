@@ -67,4 +67,4 @@ databases:
   - name: litinvestorblog-db
     databaseName: litinvestorblog
     user: litinvestorblog
-    plan: starter
+    plan: free
