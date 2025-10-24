@@ -8,7 +8,7 @@ import { Button } from '../components/ui/button';
 import { Label } from '../components/ui/label';
 import { User, Lock, Eye, EyeOff } from 'lucide-react';
 import { GoogleIcon, AppleIcon } from '../components/ui/SocialAuthIcons';
-import GlassCard from '../components/ui/GlassCard';
+import GlassCard from '../components/ui/glassCard';
 import { Checkbox } from '../components/ui/checkbox';
 import FadeInOnScroll from '../components/FadeInOnScroll';
 

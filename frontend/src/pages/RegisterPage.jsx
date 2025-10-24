@@ -8,7 +8,7 @@ import { Button } from '../components/ui/button';
 import { Label } from '../components/ui/label';
 import { User, Lock, Mail, Loader, CheckCircle, XCircle, IdCard, Eye, EyeOff } from 'lucide-react';
 import { GoogleIcon, AppleIcon } from '../components/ui/SocialAuthIcons';
-import GlassCard from '../components/ui/GlassCard';
+import GlassCard from '../components/ui/glassCard';
 import FadeInOnScroll from '../components/FadeInOnScroll'; // <-- AGGIUNGI QUESTA RIGA
 
 const RegisterPage = () => {
