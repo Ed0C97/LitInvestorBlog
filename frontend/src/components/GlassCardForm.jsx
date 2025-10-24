@@ -3,7 +3,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import { Landmark } from 'lucide-react';
-import GlassCard from './ui/GlassCard';
+import GlassCard from './ui/glassCard';
 import FadeInOnScroll from './FadeInOnScroll';
 
 const DefaultCardLogo = () => <Landmark color="white" size={55} />;
