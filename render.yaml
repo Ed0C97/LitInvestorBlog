@@ -40,6 +40,8 @@ services:
         value: Rio Capital Blog
       - key: CONTACT_ADMIN_EMAIL
         sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
       - key: EMAIL_TEST_MODE
         value: false
 
