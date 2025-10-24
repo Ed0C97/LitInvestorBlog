@@ -1,0 +1,14 @@
+{
+  "banned_users": [],
+  "exact_matches": [
+    "about", "account", "api", "auth", "blog", "contact", "dashboard",
+    "help", "home", "info", "legal", "login", "logout", "me", "password",
+    "policy", "privacy", "profile", "register", "root", "search",
+    "settings", "signin", "signup", "staff", "status", "support",
+    "team", "terms", "test", "user", "username"
+  ],
+  "substring_matches": [
+    "admin", "moderator", "superuser", "fuck", "shit", "cunt", "bitch",
+    "litinvestor"
+  ]
+}

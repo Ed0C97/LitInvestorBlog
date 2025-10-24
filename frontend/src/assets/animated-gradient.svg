@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="mesh-gradient" width="1000" height="500" viewBox="0 0 1000 500">
+  <defs>
+    <!-- Blur più intenso per eliminare i contorni -->
+    <filter id="blur" filterUnits="userSpaceOnUse" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="150" />
+    </filter>
+
+    <!-- Gradiente radiale per sfondo più morbido -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#1a1225;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0812;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sfondo con gradiente radiale per più profondità -->
+  <rect id="background" width="100%" height="100%" fill="url(#bgGradient)" />
+
+  <g id="swatches" filter="url(#blur)">
+    <!-- Cerchio 1 - Rosa/Viola morbido -->
+    <circle cx="200" cy="250" r="280" fill="#c8a2c8" opacity="0.6">
+      <animate attributeName="fill"
+               values="#c8a2c8;#e8b4d4;#d4a8d8;#b89cc8;#c8a2c8"
+               dur="12s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cx"
+               values="200;180;220;190;200"
+               dur="18s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="250;270;230;260;250"
+               dur="16s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Cerchio 2 - Azzurro morbido -->
+    <circle cx="600" cy="200" r="320" fill="#6fa8d9" opacity="0.5">
+      <animate attributeName="fill"
+               values="#6fa8d9;#8fc5e8;#a8d4f4;#7ab4e0;#6fa8d9"
+               dur="14s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cx"
+               values="600;620;580;610;600"
+               dur="20s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="200;180;220;190;200"
+               dur="17s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Cerchio 3 - Blu chiaro -->
+    <circle cx="150" cy="100" r="260" fill="#7fb8fb" opacity="0.4">
+      <animate attributeName="fill"
+               values="#7fb8fb;#a8d0ff;#c8e0ff;#98c8ff;#7fb8fb"
+               dur="15s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cx"
+               values="150;130;170;140;150"
+               dur="19s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="100;120;80;110;100"
+               dur="21s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Cerchio 4 - Verde acqua -->
+    <circle cx="750" cy="150" r="240" fill="#98d8c8" opacity="0.45">
+      <animate attributeName="fill"
+               values="#98d8c8;#b8f0e0;#a8e8d8;#c0f4e8;#98d8c8"
+               dur="13s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cx"
+               values="750;770;730;760;750"
+               dur="22s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="150;130;170;140;150"
+               dur="18s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Cerchio 5 - Pesca/Rosa chiaro (aggiunto per più varietà) -->
+    <circle cx="400" cy="350" r="200" fill="#e8c4b8" opacity="0.35">
+      <animate attributeName="fill"
+               values="#e8c4b8;#f4d4c8;#f0c8c0;#e8b8a8;#e8c4b8"
+               dur="16s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cx"
+               values="400;420;380;410;400"
+               dur="23s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="350;330;370;340;350"
+               dur="20s"
+               repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Overlay per aumentare contrasto e profondità - ottimizzato per glassmorphism -->
+  <rect x="0" y="0" width="1000" height="500" fill="#0a0610" opacity="0.25" style="mix-blend-mode: multiply;"></rect>
+
+  <!-- Leggero noise/texture per più profondità -->
+  <rect x="0" y="0" width="1000" height="500" fill="url(#bgGradient)" opacity="0.15" style="mix-blend-mode: overlay;"></rect>
+</svg>
+

@@ -1,0 +1,10 @@
+# LitInvestorBlog-backend/src/extensions.py
+
+from flask_sqlalchemy import SQLAlchemy
+from authlib.integrations.flask_client import OAuth
+
+db = SQLAlchemy()
+oauth = OAuth()
+
+# Limiter verrà inizializzato in main.py
+limiter = None
