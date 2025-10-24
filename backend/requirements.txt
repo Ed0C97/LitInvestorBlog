@@ -27,6 +27,7 @@ Pillow~=11.1.0  # Per la gestione delle immagini
 # Utilità
 python-dotenv  # Per caricare il file .env
 Flask-Compress==1.14
+psycopg2-binary==2.9.9
 
 # Production WSGI server
 gunicorn~=23.0.0
