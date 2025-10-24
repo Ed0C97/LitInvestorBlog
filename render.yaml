@@ -4,11 +4,12 @@ services:
   - type: web
     name: litinvestorblog-backend
     env: python
-    pythonVersion: '3.11'
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT
     envVars:
+      - key: PYTHON_VERSION
+      - value: '3.11'
       - key: FLASK_ENV
         value: production
       - key: SECRET_KEY
