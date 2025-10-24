@@ -11,7 +11,7 @@ import { toast } from 'sonner';
 import SEO from '../components/SEO';
 import RelatedArticles from '@/components/RelatedArticles.jsx';
 import FadeInOnScroll from '../components/FadeInOnScroll';
-import GlassCard from '../components/ui/GlassCard';
+import GlassCard from '../components/ui/glassCard';
 
 const ContactPage = () => {
   const { user } = useAuth();
